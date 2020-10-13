@@ -21,6 +21,7 @@ public class DemoApplication {
 	
 	@Bean
 	public CommandLineRunner setup(ToDoRepository toDoRepository) {
+		
 		return (args) -> {
 			toDoRepository.save(new ToDo("Remove unused imports", true));
 			toDoRepository.save(new ToDo("Clean the code", true));
