@@ -27,6 +27,7 @@ public class DemoApplication {
 			toDoRepository.save(new ToDo("Clean the code", true));
 			toDoRepository.save(new ToDo("Build the artifacts", false));
 			toDoRepository.save(new ToDo("Deploy the jar file", true));
+			toDoRepository.save(new ToDo("Deploy", true));
 			logger.info("The sample data has been generated");
 		};
 	}
